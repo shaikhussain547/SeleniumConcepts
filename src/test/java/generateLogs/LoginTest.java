@@ -43,7 +43,7 @@ public class LoginTest {
 	
 	@Test(priority=2)
 	public void verifyUsernameLable() {
-		WebElement usernameLable = driver.findElement(By.xpath("//h1//strong"));
+		WebElement usernameLable = driver.findElement(By.xpath("//h1"));
 		System.out.println(usernameLable);
 		Assert.assertTrue(usernameLable.isDisplayed());
 		if(usernameLable.isDisplayed()){

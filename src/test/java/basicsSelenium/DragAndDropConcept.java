@@ -32,6 +32,9 @@ public class DragAndDropConcept {
 		.moveToElement(driver.findElement(By.xpath("//*[@id=\"droppable\"]")))
 		.release().build().perform();
 		
+//		driver.switchTo().defaultContent();
+//		driver.switchTo().parentFrame();
+		
 //		action.dragAndDrop(driver.findElement(By.xpath("//*[@id=\"draggable\"]")), driver.findElement(By.xpath("//*[@id=\"droppable\"]")))
 //		.build().perform();
 		

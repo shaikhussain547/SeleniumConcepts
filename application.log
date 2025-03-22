@@ -1,5 +1,4 @@
-2024-07-05 20:07:45,127  INFO [main] LoginTest:27 - launching chrome browser
-2024-07-05 20:07:46,101  INFO [main] LoginTest:31 - entering into application url
-2024-07-05 20:07:48,655  INFO [main] LoginTest:40 - login page title is : ACME System 1 - Log In
-2024-07-05 20:07:50,490  INFO [main] LoginTest:27 - launching chrome browser
-2024-07-05 20:07:54,351  INFO [main] LoginTest:31 - entering into application url
+2025-03-09 14:31:49,753  INFO [main] TestLogs4jxml:28 - Chrome Opened
+2025-03-09 14:31:51,356  INFO [main] TestLogs4jxml:31 - Applciation opened
+2025-03-09 14:31:51,504  INFO [main] TestLogs4jxml:41 - Validating Header
+2025-03-09 14:31:53,533  INFO [main] TestLogs4jxml:48 - Closing Browser

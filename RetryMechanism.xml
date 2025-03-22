@@ -1,0 +1,13 @@
+<suite name="RetryFailedTestSuite">
+	
+	<listeners>
+		<listener class-name="advancedSelenium.AnnotationTransformer"/>
+	</listeners>
+	
+	<test name="RetryMultipleFailedTest">
+		<classes>
+			<class name="advancedSelenium.RetryLogic"/>
+		</classes>
+	</test>
+	
+</suite>

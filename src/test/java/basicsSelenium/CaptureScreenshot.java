@@ -35,7 +35,7 @@ public class CaptureScreenshot {
 		//Capture the element screenshot:
 		WebElement ele = driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div[2]"));
 		source = ele.getScreenshotAs(OutputType.FILE);
-		dest = new File(".\\src\\test\\Screenshots\\Element.jpeg");
+		dest = new File(".\\Screenshots\\Element.jpeg");
 		FileUtils.copyFile(source, dest);
 	}
 

@@ -1,8 +1,12 @@
 package basicsSelenium;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -11,14 +15,16 @@ public class AlertPopupHandle {
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver;
-		String FFKey = "webdriver.gecko.driver";
-		String FFValue =  "C:\\Users\\hussa\\Documents\\SDET\\Selenium\\Driver\\geckodriver.exe";
-		System.setProperty(FFKey, FFValue);
-		driver = new FirefoxDriver(); //launch FF
-		System.out.println("Firefox browser launchded ");
+		driver = new ChromeDriver(new ChromeOptions());
 		driver.manage().window().maximize();
+		
 		driver.get("https://www.rediff.com/");
+		
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
 		driver.findElement(By.linkText("Sign in")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.name("proceed")).click();
 		Thread.sleep(5000);
 		
